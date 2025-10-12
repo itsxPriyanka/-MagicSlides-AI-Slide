@@ -66,7 +66,7 @@ function App() {
     ]);
 
     try {
-      const { data } = await axios.post("http://localhost:4000/api/generate", {
+      const { data } = await axios.post("https://ai-ppt-app.onrender.com/api/generate", {
         prompt,
       });
       const candidate = data?.candidates?.[0]?.content;
